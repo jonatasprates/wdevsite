@@ -2,7 +2,9 @@
  <div class="app">
 
    <Header></Header>
-   <Home></Home>
+   
+    <router-view path="$router.key"></router-view>
+
    <Footer></Footer>
 
  </div>
@@ -11,7 +13,6 @@
 <script>
 import './styles/global.css';
 import Header from './components/Header';
-import Home from './pags/Home.vue';
 import Footer from './components/Footer.vue';
 
 
@@ -19,7 +20,6 @@ export default {
   name: 'App',
   components: {
     Header,
-    Home,
     Footer
 }
 }
