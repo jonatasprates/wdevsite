@@ -1,9 +1,9 @@
 <template>
     <header>
         <nav class="container">
-            <a href="/">
+            <router-link to="/">
                 <img id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg" alt="WDEV">
-            </a>
+            </router-link>
 
             <img v-on:click="openMenu" id="menu-button" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg" alt="Abrir menu">
         
@@ -11,15 +11,15 @@
 
             <div id="menu-items" :class="{active:menuActive}">
 
-                <a href="/">
+                <router-link to="/">
                     <img id="menu-logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg" alt="WDEV">
-                </a>
+                </router-link>
 
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/videos">Vídeos</a></li>
-                    <li><a href="/sobre">Sobre</a></li>
-                    <li><a href="/contato">Contato</a></li>
+                    <li v-on:click="closeMenu"><router-link to="/">Home</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/videos">Vídeos</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/sobre">Sobre</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/contato">Contato</router-link></li>
                 </ul>
             </div>
         
