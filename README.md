@@ -1,24 +1,9 @@
 # wdev-site
 
-## Project setup
-```
-yarn install
-```
+Projeto criado Wdev.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+# O que foi utilizada ?
+Site Wdev, utilizando VueJs, Vue-router, Axios, JavaScript, HTML 5, CSS 3 e FlexBox.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+![image](https://user-images.githubusercontent.com/8063437/181389323-1542dc1a-58ee-48e6-8d52-11c6d3732747.png)
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
