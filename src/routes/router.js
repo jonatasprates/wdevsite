@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from '@/pages/Home';
 import Videos from '@/pages/Videos';
 import Sobre from '@/pages/Sobre';
+//import Contato from '@/pages/Contato';
 
 const routes = [
     { 
@@ -16,6 +17,10 @@ const routes = [
     { 
         path: '/sobre',
         component: Sobre
+    },
+    { 
+        path: '/contato',
+        component: () => import('@/pages/Contato')
     }
 ];
 
